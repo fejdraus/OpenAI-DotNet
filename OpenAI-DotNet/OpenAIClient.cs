@@ -71,7 +71,6 @@ namespace OpenAI
             {
                 PooledConnectionLifetime = TimeSpan.FromMinutes(15)
             });
-            client.DefaultRequestHeaders.Add("User-Agent", "OpenAI-DotNet");
             client.DefaultRequestHeaders.Add("OpenAI-Beta", "assistants=v1");
 
             if (!OpenAIClientSettings.BaseRequestUrlFormat.Contains(OpenAIClientSettings.AzureOpenAIDomain) &&
